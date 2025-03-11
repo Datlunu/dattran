@@ -1,13 +1,111 @@
-body {
-  font-family: "Segoe UI", sans-serif;
+/* Reset lại margin và padding mặc định */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  box-sizing: border-box;
 }
 
-h1 {
+/* Đặt phông chữ cho toàn bộ trang */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Định dạng container chính */
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+/* Tiêu đề */
+header {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
   color: #2c3e50;
-  margin-top: 20px;
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Avatar */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2c3e50;
+}
+
+/* Phần thông tin cá nhân */
+.info {
+  margin-bottom: 30px;
+}
+
+.thongtin {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.thongtin b {
+  color: #2c3e50;
+}
+
+.thongtin i {
+  color: #7f8c8d;
+}
+
+/* Phần kỹ năng */
+.skills {
+  margin-bottom: 30px;
+}
+
+.skills h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style-type: none;
+}
+
+.skills ul li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #7f8c8d;
+}
+
+/* Mục tiêu nghề nghiệp */
+.goal h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.goal p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
 }

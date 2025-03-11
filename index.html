@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web App Có Lỗi</title>
-  <!-- Lỗi: tên file CSS bị sai (styel.css thay vì style.css) -->
-  <link rel="stylesheet" href="styel.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV của Nguyễn Xuân Tình</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Chào mừng đến với Web App Có Lỗi!</h1>
-  <p id="greeting">Hãy nhấn nút bên dưới để nhận thông báo.</p>
-  <!-- Lỗi: id của nút không khớp với JavaScript (HTML có "clickbtn" còn JS dùng "clickBtn") -->
-  <button id="clickbtn">Nhấn vào đây!</button>
-  <script src="script.js"></script>
+    <div class="container">
+        <!-- Tiêu đề -->
+        <header>
+            <div class="avatar-container">
+                <img src="avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+            <h1>Nguyễn Xuân Tình</h1>
+            <p class="subtitle">Design Frontend</p>
+        </header>
+
+        <!-- Thông tin cá nhân -->
+        <section class="info">
+            <div class="thongtin">
+                <b>Tên:</b> <i>Nguyễn Xuân Tình</i>
+            </div>
+            <div class="thongtin">
+                <b>Ngày sinh:</b> <i>2003</i>
+            </div>
+            <div class="thongtin">
+                <b>Điện thoại:</b> <i>037814xxx</i>
+            </div>
+            <div class="thongtin">
+                <b>Email:</b> <i>nguyenxuantinh@email.com</i>
+            </div>
+            <div class="thongtin">
+                <b>Địa chỉ:</b> <i>HCM, Việt Nam</i>
+            </div>
+        </section>
+
+        <!-- Kỹ năng -->
+                <section class="kĩ năng">
+            <h2>Kỹ Năng</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Vue.js</li>
+                <li>UI/UX Design</li>
+                <li>Git, GitHub</li>
+                <li>Node.js, Express</li>
+                <li>SQL, NoSQL</li>
+                <li>Agile, Scrum</li>
+            </ul>
+        </section>
+
+        <!-- Mục tiêu nghề nghiệp -->
+        <section class="goal">
+            <h2>Mục Tiêu Nghề Nghiệp</h2>
+            <p>Tôi muốn trở thành một Frontend Developer giỏi, giúp tạo ra những trải nghiệm người dùng tuyệt vời và tham gia vào các dự án sáng tạo.</p>
+        </section>
+    </div>
 </body>
 </html>
